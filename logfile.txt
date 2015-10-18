@@ -1,0 +1,127 @@
+=== Building Teeworlds Server===
+auto configuration
+
+configuration:
+AUTO  compiler             cl
+AUTO  stackprotector       yes
+AUTO  zlib                 not found
+AUTO  sdl                  using supplied win32 libraries
+AUTO  freetype             using supplied win32 libraries
+
+notes:
+saved configuration to 'config.lua'
+
+[ 1/75] [1] network_header > src/game/generated/protocol.h
+[ 2/75] [2] server_content_header > src/game/generated/server_data.h
+[ 3/75] [3] c src/engine/external/zlib/inflate.c
+[ 4/75] [4] c src/engine/external/zlib/inffast.c
+[ 5/75] [4] c src/engine/external/zlib/infback.c
+[ 6/75] [3] c src/engine/external/zlib/deflate.c
+[ 7/75] [4] c src/engine/external/zlib/crc32.c
+[ 8/75] [3] c src/engine/external/zlib/compress.c
+[ 9/75] [1] cmd5 src/game/generated/nethash.cpp
+[10/75] [2] server_content_source > src/game/generated/server_data.cpp
+[11/75] [3] network_source > src/game/generated/protocol.cpp
+[12/75] [4] c src/engine/external/zlib/adler32.c
+[13/75] [4] c src/engine/external/zlib/uncompr.c
+[14/75] [2] c src/engine/external/zlib/inftrees.c
+[15/75] [4] c++ src/game/generated/server_data.cpp
+[16/75] [3] c src/engine/external/zlib/zutil.c
+[17/75] [1] c++ src/game/server/player.cpp
+src/game/generated/server_data.cpp(405): warning C4838: преобразование из "double" в "float" требует сужающего преобразования
+src/game/generated/server_data.cpp(408): warning C4838: преобразование из "double" в "float" требует сужающего преобразования
+src/game/generated/server_data.cpp(417): warning C4838: преобразование из "double" в "float" требует сужающего преобразования
+src/game/generated/server_data.cpp(425): warning C4838: преобразование из "double" в "float" требует сужающего преобразования
+src/game/generated/server_data.cpp(433): warning C4838: преобразование из "double" в "float" требует сужающего преобразования
+src/game/generated/server_data.cpp(444): warning C4838: преобразование из "double" в "float" требует сужающего преобразования
+src/game/generated/server_data.cpp(455): warning C4838: преобразование из "double" в "float" требует сужающего преобразования
+src/game/generated/server_data.cpp(499): warning C4838: преобразование из "double" в "float" требует сужающего преобразования
+[18/75] [4] c++ src/game/server/gameworld.cpp
+[19/75] [3] c++ src/game/server/gamemodes/tdm.cpp
+[20/75] [2] c++ src/game/server/gamemodes/mod.cpp
+D:\Program Files\Microsoft Visual Studio 14.0\VC\INCLUDE\exception(361): warning C4577: 'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc
+[21/75] [1] c++ src/game/server/gamemodes/dm.cpp
+D:\Program Files\Microsoft Visual Studio 14.0\VC\INCLUDE\exception(361): warning C4577: 'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc
+[22/75] [4] c++ src/game/server/gamemodes/ctf.cpp
+D:\Program Files\Microsoft Visual Studio 14.0\VC\INCLUDE\exception(361): warning C4577: 'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc
+[23/75] [3] c++ src/game/server/gamecontroller.cpp
+[24/75] [1] c src/engine/external/zlib/trees.c
+D:\Program Files\Microsoft Visual Studio 14.0\VC\INCLUDE\cmath(291): error C2556: float round(float) noexcept: перегруженная функция отличается от "int round(float)" только возвращаемым типом
+src\base/math.h(23): note:  см. объявление "round"
+D:\Program Files\Microsoft Visual Studio 14.0\VC\INCLUDE\cmath(291): error C2371: round: переопределение; различные базовые типы
+src\base/math.h(23): note:  см. объявление "round"
+D:\Program Files\Microsoft Visual Studio 14.0\VC\INCLUDE\xlocale(341): warning C4530: Использован обработчик исключений C++, но семантика уничтожения объектов не включена. Задайте параметр /EHsc
+bam: 'c++ src/game/server/gamemodes/mod.cpp' error 2
+[25/75] [2] c++ src/game/server/gamecontext.cpp
+D:\Program Files\Microsoft Visual Studio 14.0\VC\INCLUDE\exception(361): warning C4577: 'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc
+[26/75] [4] c++ src/game/server/eventhandler.cpp
+D:\Program Files\Microsoft Visual Studio 14.0\VC\INCLUDE\exception(361): warning C4577: 'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc
+[27/75] [3] c++ src/game/server/entity.cpp
+[28/75] [1] c++ src/game/server/entities/spark.cpp
+D:\Program Files\Microsoft Visual Studio 14.0\VC\INCLUDE\exception(361): warning C4577: 'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc
+[29/75] [2] c++ src/game/server/entities/singularity.cpp
+D:\Program Files\Microsoft Visual Studio 14.0\VC\INCLUDE\exception(361): warning C4577: 'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc
+D:\Program Files\Microsoft Visual Studio 14.0\VC\INCLUDE\exception(361): warning C4577: 'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc
+[30/75] [4] c++ src/game/server/entities/singularinator.cpp
+[31/75] [3] c++ src/game/server/entities/projectile.cpp
+D:\Program Files\Microsoft Visual Studio 14.0\VC\INCLUDE\exception(361): warning C4577: 'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc
+[32/75] [1] c++ src/game/server/entities/pickup.cpp
+D:\Program Files\Microsoft Visual Studio 14.0\VC\INCLUDE\exception(361): warning C4577: 'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc
+[33/75] [2] c++ src/game/server/entities/laserwall.cpp
+D:\Program Files\Microsoft Visual Studio 14.0\VC\INCLUDE\exception(361): warning C4577: 'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc
+[34/75] [4] c++ src/game/server/entities/laserturret.cpp
+D:\Program Files\Microsoft Visual Studio 14.0\VC\INCLUDE\exception(361): warning C4577: 'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc
+[35/75] [3] c++ src/game/server/entities/laser.cpp
+D:\Program Files\Microsoft Visual Studio 14.0\VC\INCLUDE\exception(361): warning C4577: 'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc
+[36/75] [1] c++ src/game/server/entities/flag.cpp
+D:\Program Files\Microsoft Visual Studio 14.0\VC\INCLUDE\exception(361): warning C4577: 'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc
+[37/75] [2] c++ src/game/server/entities/character.cpp
+D:\Program Files\Microsoft Visual Studio 14.0\VC\INCLUDE\exception(361): warning C4577: 'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc
+[38/75] [4] rc other/icons/teeworlds_srv_cl.rc
+D:\Program Files\Microsoft Visual Studio 14.0\VC\INCLUDE\exception(361): warning C4577: 'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc
+[39/75] [3] c++ src/game/generated/protocol.cpp
+D:\Program Files\Microsoft Visual Studio 14.0\VC\INCLUDE\exception(361): warning C4577: 'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc
+[40/75] [1] c++ src/game/generated/nethash.cpp
+[41/75] [3] c++ src/game/localization.cpp
+Microsoft (R) Windows (R) Resource Compiler Version 10.0.10011.16384
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+[42/75] [4] c++ src/game/layers.cpp
+[43/75] [1] c++ src/game/gamecore.cpp
+[44/75] [4] c++ src/game/collision.cpp
+D:\Program Files\Microsoft Visual Studio 14.0\VC\INCLUDE\exception(361): warning C4577: 'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc
+[45/75] [3] c++ src/engine/server/server.cpp
+[46/75] [2] c++ src/engine/server/register.cpp
+[47/75] [1] c src/base/system.c
+[48/75] [4] c++ src/engine/shared/storage.cpp
+[49/75] [2] c++ src/engine/shared/snapshot.cpp
+[50/75] [4] c++ src/engine/shared/ringbuffer.cpp
+[51/75] [4] c++ src/engine/shared/packer.cpp
+[52/75] [2] c++ src/engine/shared/network_server.cpp
+[53/75] [1] c++ src/engine/shared/network_console_conn.cpp
+[54/75] [3] c++ src/engine/shared/network_console.cpp
+[55/75] [4] c++ src/engine/shared/network_conn.cpp
+[56/75] [2] c++ src/engine/shared/network_client.cpp
+[57/75] [1] c++ src/engine/shared/network.cpp
+[58/75] [3] c++ src/engine/shared/netban.cpp
+[59/75] [4] c++ src/engine/shared/memheap.cpp
+[60/75] [1] c++ src/engine/shared/masterserver.cpp
+[61/75] [2] c++ src/engine/shared/mapchecker.cpp
+[62/75] [3] c++ src/engine/shared/map.cpp
+[63/75] [4] c++ src/engine/shared/linereader.cpp
+[64/75] [2] c++ src/engine/shared/kernel.cpp
+[65/75] [1] c++ src/engine/shared/jobs.cpp
+[66/75] [3] c++ src/engine/shared/huffman.cpp
+[67/75] [4] c++ src/engine/shared/filecollection.cpp
+[68/75] [2] c++ src/engine/shared/engine.cpp
+[69/75] [1] c++ src/engine/shared/econ.cpp
+[70/75] [3] c++ src/engine/shared/demo.cpp
+[71/75] [2] c++ src/engine/shared/datafile.cpp
+[72/75] [4] c++ src/engine/shared/console.cpp
+[73/75] [1] c++ src/engine/shared/config.cpp
+[74/75] [3] c++ src/engine/shared/compression.cpp
+D:\Program Files\Microsoft Visual Studio 14.0\VC\INCLUDE\exception(361): warning C4577: 'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc
+bam: error: a build step failed
+=== Finished ===
+
+Press any Key to Compile again...
